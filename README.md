@@ -1,4 +1,4 @@
-<h1 align="center">Rbxlx-2-Rojo</h1> 
+<h1 align="center">Rbxlx-Rojo-Converter</h1> 
 
 <div align="center">
   <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/TuiDevelops/shield-scan?style=for-the-badge" height="25px"> 
@@ -16,7 +16,7 @@
 
 ## About
 
-**Rbxlx-2-Rojo** is a desktop tool designed to help Roblox developers migrate existing  
+**Rbxlx-Rojo-Converter** is a desktop tool designed to help Roblox developers migrate existing  
 **Roblox Studio games (`.rbxlx`)** into a **Rojo-compatible project structure**, enabling proper version control and a modern development workflow using editors like Visual Studio Code.
 
 This project simplifies the transition from traditional Roblox Studio development to a source-controlled environment — **without rebuilding the game from scratch**.
@@ -29,7 +29,7 @@ Many Roblox developers start projects directly inside Roblox Studio, which makes
 
 Rojo solves this by synchronizing files from the local filesystem into Roblox Studio — but migrating an already existing game can be complex and time-consuming.
 
-**Rbxlx-2-Rojo** addresses this problem by:
+**Rbxlx-Rojo-Converter** addresses this problem by:
 
 - Reading a `.rbxlx` file
 - Extracting scripts and relevant instances
@@ -64,25 +64,29 @@ The UI was first designed in Figma and later implemented using **Tkinter**.
 
 ## Installation
 
-### Linux (AppImage)
+### Installation
 
-The application is distributed as an **AppImage**, which works on most Linux distributions.
+We recommend using Gear Lever, a graphical AppImage manager available on Flathub.
+It allows you to install AppImages with a simple drag-and-drop interface and automatically integrates the app into your system.
 
-#### Steps
+### Step 1 – Install Gear Lever
 
-1. Download the latest `.AppImage` from the **Releases** page:
-   - https://github.com/TuiDevelops/Rbxlx-2-Rojo/releases
+    flatpak install flathub it.mijorus.gearlever
 
-2. Make the file executable:
-   ```bash
-   chmod +x RBXLX-Rojo-Converter-1.0.0-x86_64.AppImage
-   
-3. Run the application:
-   ```bash
-   ./RBXLX-Rojo-Converter-1.0.0-x86_64.AppImage
+### Step 2 – Download the AppImage
 
-No installation required.
-The application does not modify your system.
+Download the latest version from the Releases page:
+
+    RBXLX-Rojo-Converter-1.0.0-x86_64.AppImage
+
+### Step 3 – Install
+1. Open Gear Lever
+
+2. Drag the AppImage into the window
+
+3. Click Install
+
+4. The application will now appear in your system menu.
 
 ## License
 This project is licensed under the terms described in the LICENSE file.
@@ -93,5 +97,6 @@ This project is licensed under the terms described in the LICENSE file.
   ├── converter.py    # Conversion controller and workflow
   ├── parser.py       # RBXLX parsing logic
   ├── emitter.py      # Rojo project generation
+  ├── project.py      # Project's json generation
   ├── LICENSE         # License and usage terms
   └── README.md
