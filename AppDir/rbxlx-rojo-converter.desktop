@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=RBXLX Rojo Converter
+Exec=rbxlx-rojo-converter
+Icon=rbxlx-rojo-converter-icon
+Categories=Utility;
+Terminal=false
+
