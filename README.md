@@ -45,7 +45,6 @@ The result is a project that can be managed with Git, edited in external editors
 - Desktop graphical interface (GUI)
 - Real-time conversion logs
 - Clean, dark-themed UI
-- Cross-platform support (Linux and Windows)
 - Designed for simplicity and usability
 
 ---
