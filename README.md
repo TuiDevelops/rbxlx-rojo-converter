@@ -64,8 +64,6 @@ The UI was first designed in Figma and later implemented using **Tkinter**.
 
 ## Installation
 
-### Installation
-
 We recommend using Gear Lever, a graphical AppImage manager available on Flathub.
 It allows you to install AppImages with a simple drag-and-drop interface and automatically integrates the app into your system.
 
