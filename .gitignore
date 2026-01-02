@@ -1,6 +1,8 @@
 # AppImage build
 AppDir/
 *.AppImage
+*.desktop
+build.sh
 
 # Python
 __pycache__/
