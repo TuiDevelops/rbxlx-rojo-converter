@@ -53,7 +53,8 @@ def convert_rbxlx(rbxlx_path, output_dir, log):
     for item in root_items:
         walk(item, [])
 
-    generate_project_json(output_dir)
 
+    generate_project_json(output_dir)
+    
     log("")
     log(f"✅ Conversion completed — {converted} extracted scripts.")

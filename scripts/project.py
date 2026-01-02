@@ -20,15 +20,16 @@ def generate_project_json(output_dir):
       }
     },
 
+    "ServerStorage": {
+      "$path": "src/ServerStorage"
+    },
+
     "StarterGui": {
       "$path": "src/StarterGui"
     }
   }
 }
 """
-    with open(
-        os.path.join(output_dir, "default.project.json"),
-        "w",
-        encoding="utf-8"
-    ) as f:
+    path = os.path.join(output_dir, "default.project.json")
+    with open(path, "w", encoding="utf-8") as f:
         f.write(content)
