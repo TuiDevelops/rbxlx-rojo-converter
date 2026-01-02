@@ -49,7 +49,7 @@ class App(tk.Tk):
 
         tk.Label(
             root,
-            text="Converta scripts de um jogo Roblox (.rbxlx) para um projeto rojo.",
+            text="Convert Roblox game scripts (.rbxlx) to a rojo project.",
             bg=BG_MAIN,
             fg=FG_MUTED,
             font=("Sans", 10)
@@ -61,7 +61,7 @@ class App(tk.Tk):
 
         tk.Label(
             card,
-            text="Configuração",
+            text="Settings",
             bg=BG_CARD,
             fg=FG_TEXT,
             font=("Sans", 12, "bold")
@@ -69,18 +69,18 @@ class App(tk.Tk):
 
         self._labeled_input(
             card,
-            "Arquivo .rbxlx",
+            ".rbxlx file",
             self.rbxlx_path,
-            "Escolher Arquivo",
+            "Choose File",
             BTN_BLUE,
             self.pick_rbxlx
         )
 
         self._labeled_input(
             card,
-            "Pasta de saída",
+            "Output folder",
             self.output_dir,
-            "Escolher Pasta",
+            "Choose Folder",
             BTN_BLUE,
             self.pick_output
         )
@@ -88,7 +88,7 @@ class App(tk.Tk):
         # BOTÃO CONVERTER
         tk.Button(
             root,
-            text="Converter",
+            text="Convert",
             bg=BTN_GREEN,
             fg="#000000",
             font=("Sans", 11, "bold"),
@@ -125,7 +125,7 @@ class App(tk.Tk):
         )
         self.log_box.pack(fill="both", expand=True)
 
-        self.log("Pronto. Selecione um arquivo .rbxlx para começar.")
+        self.log("Okay. Select an .rbxlsx file to begin.")
 
         # CRÉDITOS
         credits = tk.Label(
@@ -201,8 +201,8 @@ class App(tk.Tk):
     def start_conversion(self):
         if not self.rbxlx_path.get() or not self.output_dir.get():
             messagebox.showerror(
-                "Erro",
-                "Selecione o arquivo .rbxlx e a pasta de saída."
+                "Error",
+                "Select the .rbxlx file and the output folder."
             )
             return
 
@@ -210,7 +210,7 @@ class App(tk.Tk):
         self.log_box.delete("1.0", tk.END)
         self.log_box.config(state="disabled")
 
-        self.log("Iniciando conversão...")
+        self.log("Starting conversion...")
 
         threading.Thread(
             target=self.run_conversion,
@@ -225,7 +225,7 @@ class App(tk.Tk):
                 self.log
             )
         except Exception as e:
-            self.log(f"Erro: {e}")
+            self.log(f"Error: {e}")
 
 
 if __name__ == "__main__":
