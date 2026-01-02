@@ -17,6 +17,9 @@ def generate_project_json(output_dir):
     "StarterPlayer": {
       "StarterPlayerScripts": {
         "$path": "src/StarterPlayer/StarterPlayerScripts"
+      },
+      "StarterCharacterScripts": {
+        "$path": "src/StarterPlayer/StarterCharacterScripts"
       }
     },
 

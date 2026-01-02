@@ -2,9 +2,9 @@ import os
 
 
 SCRIPT_CLASS_MAP = {
-    "Script": ".server.lua",
-    "LocalScript": ".client.lua",
-    "ModuleScript": ".lua",
+    "Script": ".server.luau",
+    "LocalScript": ".client.luau",
+    "ModuleScript": ".luau",
 }
 
 
