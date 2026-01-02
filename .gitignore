@@ -1,2 +1,10 @@
+# AppImage build
+AppDir/
+*.AppImage
+
+# Python
 __pycache__/
 *.pyc
+
+# OS
+.DS_Store
