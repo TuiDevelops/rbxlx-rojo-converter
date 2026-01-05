@@ -5,6 +5,16 @@ from emitter import emit_script
 from project import generate_project_json
 
 
+SERVICE_FOLDERS = [
+    "ServerScriptService",
+    "ReplicatedStorage",
+    "ServerStorage",
+    "StarterGui",
+    os.path.join("StarterPlayer", "StarterPlayerScripts"),
+    os.path.join("StarterPlayer", "StarterCharacterScripts"),
+]
+
+
 ROOT_SERVICES = {
     "ServerScriptService",
     "ReplicatedStorage",
@@ -19,6 +29,12 @@ def convert_rbxlx(rbxlx_path, output_dir, log):
     src_root = os.path.join(output_dir, "src")
     os.makedirs(src_root, exist_ok=True)
 
+    # Estrutura básica
+    for folder in SERVICE_FOLDERS:
+        path = os.path.join(src_root, folder)
+        os.makedirs(path, exist_ok=True)
+
+    
     converted = 0
 
     def walk(node, path_stack):
