@@ -86,6 +86,27 @@ Download the latest version from the Releases page:
 
 4. The application will now appear in your system menu.
 
+---
+
+## How to Use
+
+### Step 1 - Launch Rojo
+Open the terminal, and launch Rojo:
+
+    aftman init
+    
+    aftman add rojo-rbx/rojo
+    
+    aftman install
+    
+    rojo init
+
+### Step 2 - Launch Rbxlx-Rojo-Converter
+1. Open the Rbxlx-Rojo-Converter
+2. Select the .rbxlx file
+3. Select the folder where the project should be located
+4. Click convert, and your project is now ready!
+
 ## License
 This project is licensed under the terms described in the LICENSE file.
 
