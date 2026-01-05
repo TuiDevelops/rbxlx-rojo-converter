@@ -19,7 +19,7 @@
 **Rbxlx-Rojo-Converter** is a desktop tool designed to help Roblox developers migrate existing  
 **Roblox Studio games (`.rbxlx`)** into a **Rojo-compatible project structure**, enabling proper version control and a modern development workflow using editors like Visual Studio Code.
 
-This project simplifies the transition from traditional Roblox Studio development to a source-controlled environment — **without rebuilding the game from scratch**.
+This project simplifies the transition from traditional Roblox Studio development to a source-controlled environment, **without rebuilding the game from scratch**.
 
 ---
 
